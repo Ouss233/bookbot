@@ -8,6 +8,6 @@ def count_words(text):
     return len(words)
 
 def main():
-    print({count_words(get_book_text('./books/frankenstein.txt'))}, "words found in the document")
+    print(count_words(get_book_text('./books/frankenstein.txt')), "words found in the document")
     
 main()
