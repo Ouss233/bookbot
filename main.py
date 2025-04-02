@@ -16,5 +16,5 @@ def main():
     report = list_sorted(count_characters(get_book_text('./books/frankenstein.txt')))
     for element in report:
         if element[0].isalpha() == True:
-            print(f"{element[0]}:{element[1]}")
+            print(f"{element[0]}:",element[1])
 main()
