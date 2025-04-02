@@ -9,8 +9,10 @@ def get_book_text(path_to_file):
 
 
 def main():
+    print("============ BOOKBOT ============\nAnalyzing book found at books/frankenstein.txt...\n----------- Word Count ----------")
     print("Found",count_words(get_book_text('./books/frankenstein.txt')), "total words")
     #print(count_characters(get_book_text('./books/frankenstein.txt')))
+    print("----------- Character Count -----------")
     report = list_sorted(count_characters(get_book_text('./books/frankenstein.txt')))
     for element in report:
         if element[0].isalpha() == True:
