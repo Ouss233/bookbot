@@ -9,7 +9,7 @@ def get_book_text(path_to_file):
 
 
 def main():
-    print(count_words(get_book_text('./books/frankenstein.txt')), "words found in the document")
+    print("Found",count_words(get_book_text('./books/frankenstein.txt')), "total words")
     #print(count_characters(get_book_text('./books/frankenstein.txt')))
     report = list_sorted(count_characters(get_book_text('./books/frankenstein.txt')))
     for element in report:
